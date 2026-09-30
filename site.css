@@ -100,11 +100,107 @@ footer.rail {
   box-shadow: 0 0 0 3px rgba(92, 201, 132, 0.14);
 }
 
-.mark {
-  width: 10px;
-  height: 10px;
+.rail a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.rail a:hover {
+  color: var(--accent);
+}
+
+.rail a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
   border-radius: 2px;
-  background: var(--brand);
+}
+
+.links {
+  display: inline-flex;
+  gap: 1.25rem;
+}
+
+.links a[aria-current="page"] {
+  color: var(--muted);
+}
+
+/* 文档页：条款 / 隐私 */
+.doc {
+  width: min(42rem, 100% - 2 * var(--gutter));
+  justify-content: flex-start;
+  align-items: stretch;
+  padding-block: clamp(3rem, 8vh, 5.5rem);
+}
+
+.doc .kicker {
+  margin: 0;
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+}
+
+.doc h1 {
+  margin: 0.9rem 0 0;
+  font-size: clamp(1.9rem, 4.5vw, 2.5rem);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.3;
+}
+
+.doc .updated {
+  margin: 0.9rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  color: var(--faint);
+}
+
+.doc h2 {
+  margin: 2.5rem 0 0;
+  font-size: 1.06rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.doc p,
+.doc li {
+  margin: 0.9rem 0 0;
+  font-size: 0.98rem;
+  line-height: 2;
+  color: var(--muted);
+}
+
+.doc ul {
+  margin: 0.9rem 0 0;
+  padding-left: 1.3rem;
+  display: grid;
+  gap: 0.35rem;
+}
+
+.doc li {
+  margin: 0;
+}
+
+.doc li::marker {
+  color: var(--faint);
+}
+
+.doc a {
+  color: var(--ink);
+  text-decoration-color: rgba(236, 237, 235, 0.32);
+  text-underline-offset: 4px;
+}
+
+.doc a:hover {
+  color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+.doc code {
+  font-family: var(--font-mono);
+  font-size: 0.86em;
+  color: var(--ink);
 }
 
 main {

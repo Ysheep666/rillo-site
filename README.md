@@ -1,6 +1,6 @@
 # rillo 网站
 
-rillo.dev 的占位页。纯静态，无构建：`index.html` + `site.css` + `favicon.svg`。
+rillo.dev 的占位页与站点文档页（条款 / 隐私）。纯静态，无构建：`index.html`、`terms.html`、`privacy.html` + `site.css` + `favicon.svg`。
 
 本地预览：
 
